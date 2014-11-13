@@ -2,122 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>表单元素浏览器差异对比</title>
+	<title>CtripH5表单</title>
 	<link rel="stylesheet" href="foundation.min.css">
 	<style>
-		h1 {
+		.list {
 			text-align: center;
 		}
-		tr {
-			text-align: center;
+		.list li {
+			border-style: solid;
+			border-color: #ddd;
+			border-width: 0 1px 1px 0;
+		}
+		.list a {
+			padding: 50px 0 40px 0;
+			display: block;
 		}
 	</style>
 </head>
 <body>
-	<h1>HTML5新增元素兼容性对比</h1>
-	 <span class="label">结论：提示性属性和验证性属性无效。其他属性在个浏览器平台上表现有差距。</span><br>
-	 <span class="label">其余没有提及的属性主要是在移动端均表现为普通输入框。</span>
-	<table>
-		<thead>
-			<tr>
-				<th></th>
-				<th>android UC</th>
-				<th>ios8 safari</th>
-				<th>chrome 38</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>datalist</td>
-				<td><img src="./form/AndroidUC/datalist.jpg" alt=""></td>
-				<td>普通输入框</td>
-				<td><img src="./form/chrome38/datalist.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>email</td>
-				<td>普通输入框</td>
-				<td>普通输入框</td>
-				<td><img src="./form/chrome38/email.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>url</td>
-				<td>普通输入框</td>
-				<td>普通输入框</td>
-				<td><img src="./form/chrome38/url.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>date</td>
-				<td><img src="./form/AndroidUC/date.jpg" alt=""></td>
-				<td><img src="./form/IOS/date.jpg" alt=""></td>
-				<td><img src="./form/chrome38/date.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>datetime</td>
-				<td>普通输入框</td>
-				<td>普通输入框</td>
-				<td>普通输入框</td>
-			</tr>
-			<tr>
-				<td>datetime-local</td>
-				<td><img src="./form/AndroidUC/datetime-local.jpg" alt=""></td>
-				<td><img src="./form/IOS/datetime-local.jpg" alt=""></td>
-				<td><img src="./form/chrome38/datetime-local.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>week</td>
-				<td><img src="./form/AndroidUC/week.jpg" alt=""></td>
-				<td><img src="./form/IOS/week.jpg" alt=""></td>
-				<td><img src="./form/chrome38/week.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>month</td>
-				<td><img src="./form/AndroidUC/month.jpg" alt=""></td>
-				<td><img src="./form/IOS/month.jpg" alt=""></td>
-				<td><img src="./form/chrome38/month.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>time</td>
-				<td><img src="./form/AndroidUC/time.jpg" alt=""></td>
-				<td><img src="./form/IOS/time.jpg" alt=""></td>
-				<td><img src="./form/chrome38/time.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>range</td>
-				<td><img src="./form/AndroidUC/range.jpg" alt=""></td>
-				<td><img src="./form/IOS/range.jpg" alt=""></td>
-				<td><img src="./form/chrome38/range.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>color</td>
-				<td><img src="./form/AndroidUC/color.jpg" alt=""></td>
-				<td>普通输入框</td>
-				<td><img src="./form/chrome38/color.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>list</td>
-				<td><img src="./form/AndroidUC/list.jpg" alt=""></td>
-				<td>普通输入框</td>
-				<td><img src="./form/chrome38/list.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>placeholder</td>
-				<td><img src="./form/AndroidUC/placeholder.png" alt=""></td>
-				<td><img src="./form/IOS/placeholder.png" alt=""></td>
-				<td><img src="./form/chrome38/placeholder.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>multiple</td>
-				<td><img src="./form/AndroidUC/multiple.jpg" alt=""></td>
-				<td><img src="./form/IOS/multiple.jpg" alt=""></td>
-				<td><img src="./form/chrome38/multiple.jpg" alt=""></td>
-			</tr>
-			<tr>
-				<td>meter</td>
-				<td><img src="./form/AndroidUC/meter.jpg" alt=""></td>
-				<td><img src="./form/IOS/meter.jpg" alt=""></td>
-				<td><img src="./form/chrome38/meter.jpg" alt=""></td>
-			</tr>
-		</tbody>
-	</table>
+	<nav class="top-bar" data-topbar role="navigation">
+	  <ul class="title-area">
+	    <li class="name">
+	      <h1><a href="#">表单研究</a></h1>
+	    </li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+
+	  <section class="top-bar-section">
+
+	  </section>
+	</nav>
+	<ul class="small-block-grid-3 list">
+	  <li><a href="#">HTML5表单新增元素</a></li>
+	  <li><a href="#">HTML5表单新增属性</a></li>
+	  <li><a href="#">HTML5表单新增input属性</a></li>
+	  <li><a href="diff.html">表单浏览器表现差异</a></li>
+	</ul>
 </body>
 </html>
