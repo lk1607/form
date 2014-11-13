@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5表单新元素</title>
+</head>
+<body>
+	Datalist<input type="url" list="datalist-demo" name="link">
+	<datalist id="datalist-demo">
+	  <option label="w3cplus" value="http://www.w3cplus.com/">
+	  </option><option label="google" value="http://www.google.com">
+	</option></datalist>
+	<br><br><br><br><br><br>
+	  Keygen: <input type="text" name="usr_name">
+	  Encryption: <keygen name="security">
+	<br><br><br><br><br><br>
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	Output:0<input type="range" id="a" value="50">100
+	+<input type="number" id="b" value="50">
+	=<output name="x" for="a b"></output>
+	</form>
+    <p><span>meter</span><meter value="3" min="0" max="10">3/10</meter></p>
+</body>
+</html>
